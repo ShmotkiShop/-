@@ -1,61 +1,79 @@
-<title>Мої посилання</title>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>My Shop</title>
 
-<style>
-body{
-background:#111;
-font-family:Arial;
-color:white;
-text-align:center;
-padding:40px;
-}
-<img src="avatar.png" alt="avatar" class="avatar">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
 
-<style>
-.avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover; /* щоб не розтягувалась */
-    border: 3px solid pink;
-}
-</style>
-img{
-width:120px;
-height:120px;
-border-radius:50%;
-margin-bottom:20px;
-}
+            /* Фон */
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
 
-a{
-display:block;
-background:#333;
-color:white;
-text-decoration:none;
-padding:15px;
-margin:15px auto;
-width:250px;
-border-radius:10px;
-font-size:20px;
-}
+            text-align: center;
+            color: white;
+        }
 
-a:hover{
-background:#555;
-}
-</style>
+        .container {
+            margin-top: 80px;
+        }
 
+        /* Аватарка */
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid pink;
+        }
+
+        h1 {
+            margin-top: 15px;
+        }
+
+        /* Кнопки */
+        .link {
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            padding: 12px;
+            background: pink;
+            color: black;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .link:hover {
+            background: hotpink;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
 
-<img src="avatar.jpg">
+<div class="container">
 
-<h1>Твоє ім'я</h1>
+    <!-- Аватарка -->
+    <img src="avatar.png" alt="avatar" class="avatar">
 
-<a href="https://tiktok.com/@lingerie.ua3">TikTok</a>
+    <!-- Назва -->
+    <h1>My Lingerie Shop 💕</h1>
 
-<a href="https://t.me/@under118">Telegram</a>
+    <!-- Лінки -->
+    <a href="#" class="link">TikTok</a>
+    <a href="#" class="link">Telegram</a>
+    <a href="#" class="link">Instagram</a>
 
-<a href="viber://chat?number=%2B380684793168">Viber</a>
-  
+</div>
+
 </body>
 </html>
