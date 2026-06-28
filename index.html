@@ -31,14 +31,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
-    /* 🔥 ПРОСТО ЗБІЛЬШЕНА АВАТАРКА */
+    /* ✅ ІДЕАЛЬНА АВАТАРКА */
     .avatar {
-        width: 180px;   /* збільшив */
-        height: 180px;  /* збільшив */
+        width: 180px;
+        height: 180px;
         border-radius: 50%;
-        object-fit: cover;
+        object-fit: cover;   /* головне — прибирає пустоти */
         border: 4px solid pink;
     }
 
@@ -74,7 +75,7 @@
         }
 
         .avatar {
-            width: 220px;  /* ще більше на телефоні */
+            width: 220px;
             height: 220px;
         }
 
@@ -98,7 +99,6 @@
 <div class="container">
 
 ```
-<!-- АВАТАР -->
 <img src="avatar.png" alt="avatar" class="avatar">
 
 <h1>@lingerie.ua3 💕</h1>
